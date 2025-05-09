@@ -46,7 +46,17 @@
 	left: 0px;
 	margin-top: 130px;
 }
+.imagen-brillante img {
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 2, 0.2);
+object-fit: cover;
+transition: all 0.5s ease;
+}
 
+.imagen-brillante:hover img {
+filter: brightness(1.3) drop-shadow(0 0 5px rgba(66, 255, 0, 0.8));
+transform: scale(1.02);
+}
 </style>
 </head>
 
@@ -69,13 +79,13 @@
     <td><strong class="Subtitulo" data-start="89" data-end="109">Volkswagen Jetta</strong><br data-start="109" data-end="112" />
       <span class="Descripcion">$460,000 – $410,000<br data-start="131" data-end="134" />
 Sedán elegante con excelente rendimiento y tecnología avanzada.</span></td>
-    <td><img src="Jetta.jpeg" width="400px" /></td>
+    <td class="imagen-brillante"><img src="Jetta.jpeg" width="400px" /></td>
   </tr>
   <tr>
     <td><strong class="Subtitulo" data-start="199" data-end="221">Volkswagen T-Cross</strong><br data-start="221" data-end="224" />
       <span class="Descripcion">$430,000 – $385,000<br data-start="243" data-end="246" />
 SUV compacto ideal para la ciudad, con gran espacio y conectividad.</span></td>
-    <td><img src="t cross.jpg"  width="400px" /></td>
+    <td class="imagen-brillante"><img src="t cross.jpg"  width="400px" /></td>
   </tr>
 </table>
 </div>
